@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header _inner">
+      <div class="_container">
+        <div class="header__wrapper">
+          <div class="header__mark"></div>
+
+          <div class="header__item _logo">
+            <a href="#" class="header__logo logo-link">
+              <img loading="lazy" src="../assets/img/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <div class="header__navigation">
+            <nav class="menu _desk">
+              <ul class="menu__list">
+                <li>
+                  <a href="#" class="menu__item">Меню</a>
+                </li>
+                <li>
+                  <a href="#" class="menu__item active">Оплата и доставка</a>
+                </li>
+                <li>
+                  <a href="#" class="menu__item">Акции</a>
+                </li>
+                <li>
+                  <a href="#" class="menu__item">Отзывы</a>
+                </li>
+                <li>
+                  <a href="#" class="menu__item">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div
+              class="schedule _desk"
+              property="schema:openingHoursSpecification"
+              typeof="schema:OpeningHoursSpecification"
+            >
+              <div class="schedule__label">
+                <img src="../assets/img/time.svg" alt="shedule time" />
+              </div>
+              <div class="schedule__content">
+                <p class="schedule__title">Работаем:</p>
+                <time datetime="11h" class="schedule__description">
+                  с <time property="schema:opens">09:30</time> до
+                  <time property="schema:closes">20:30</time>
+                </time>
+              </div>
+            </div>
+
+            <div class="call _desk">
+              <button class="call__btn popup-open" data-popup="_popup-call">
+                <img src="../assets/img/call.svg" alt="call" />
+              </button>
+
+              <div class="call__list _desk">
+                <a href="tel:0961708080" class="call__item">096 170-80-80</a>
+                <a href="tel:0661708080" class="call__item">066 170-80-80</a>
+                <a href="tel:0631708080" class="call__item">063 170-80-80</a>
+              </div>
+            </div>
+
+            <div class="header__buttons">
+              <a href="#" class="cart">
+                <span class="cart__name">
+                  <span class="cart__title"> Корзина </span>
+
+                  <span class="cart__label">
+                    <img
+                      class="hover"
+                      src="../assets/img/cart-hover.svg"
+                      alt="cart"
+                      aria-hidden="true"
+                    />
+                    <img
+                      class="static"
+                      src="../assets/img/cart.svg"
+                      alt="cart"
+                      aria-hidden="true"
+                    />
+                  </span>
+                </span>
+
+                <span class="cart__count">2</span>
+              </a>
+
+              <ul class="menu__lang">
+                <li>
+                  <span class="lang-item lang-item-current">
+                    ru
+                    <img
+                      src="../assets/img/arrow-down.svg"
+                      alt="language toggle"
+                    />
+                  </span>
+
+                  <ul>
+                    <li
+                      class="lang-item lang-item-1 lang-item-en lang-item-first"
+                    >
+                      <a lang="rus-RU" hreflang="rus-RU" href="#1"> ua </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <button class="menu-burger popup-open" data-popup="_popup-menu">
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="popup popup-call"
+        data-popupname="_popup-call"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close">
+              <img
+                class="desktop"
+                src="../assets/img/popup-close.svg"
+                alt="close"
+              />
+              <img
+                class="mobile"
+                src="../assets/img/popup-close-black.svg"
+                alt="close"
+              />
+            </button>
+
+            <div class="popup__content">
+              <div class="popup__title__container">
+                <p class="popup__title">Contact us</p>
+              </div>
+
+              <div class="call__list">
+                <a href="tel:0961708080" class="call__item">096 170-80-80</a>
+                <a href="tel:0661708080" class="call__item">066 170-80-80</a>
+                <a href="tel:0631708080" class="call__item">063 170-80-80</a>
+              </div>
+              <!-- <div class="popup__subtitle">
+                      <p>
+                          By clicking the "send" button, you agree to the
+                          and consent to the processing of personal data
+                      </p>
+                  </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="popup popup-menu fullscreen-phone"
+        data-popupname="_popup-menu"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close">
+              <img src="../assets/img/popup-close-black.svg" alt="close" />
+            </button>
+
+            <div class="popup__content">
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li>
+                    <a href="#" class="menu__item">Меню</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item active">Оплата и доставка</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item">Акции</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item">Отзывы</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <div
+                class="schedule"
+                property="schema:openingHoursSpecification"
+                typeof="schema:OpeningHoursSpecification"
+              >
+                <div class="schedule__label">
+                  <img src="../assets/img/time.svg" alt="shedule time" />
+                </div>
+                <div class="schedule__content">
+                  <p class="schedule__title">Работаем:</p>
+                  <time datetime="11h" class="schedule__description">
+                    с <time property="schema:opens">09:30</time> до
+                    <time property="schema:closes">20:30</time>
+                  </time>
+                </div>
+              </div>
+
+              <div class="call__list">
+                <a href="tel:0961708080" class="call__item">096 170-80-80</a>
+                <a href="tel:0661708080" class="call__item">066 170-80-80</a>
+                <a href="tel:0631708080" class="call__item">063 170-80-80</a>
+              </div>
+              <!-- <div class="popup__subtitle">
+                      <p>
+                          By clicking the "send" button, you agree to the
+                          and consent to the processing of personal data
+                      </p>
+                  </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="popup popup-video" data-popupname="_popup-video" aria-modal="true" role="dialog">
+      <div class="popup__scroll">
+          <div class="popup__wrapper">
+              <button class="popup__close">
+                  <img class="desktop" src="../assets/img/popup-close.svg" alt="close">
+                  <img class="mobile" src="../assets/img/popup-close-black.svg" alt="close">
+              </button>
+
+              <div class="popup__content">
+
+                  <div class="popup__video">
+                      <div class="popup__video__container">
+                          <iframe src="https://www.youtube.com/embed/oZOLnp5yQ4Y" title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen>
+                          </iframe>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div> -->
+    </header>
+
+    <div class="breadcrumbs__container _container">
+      <div class="breadcrumbs">
+        <span>
+          <span>
+            <a href="#">Главная</a>
+            »
+            <span class="breadcrumb_last" aria-current="page">Пицца</span>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <section class="banner _banner-inner _inner-section">
+      <div class="_container">
+        <div class="banner__wrapper">
+          <div class="banner__content">
+            <p class="banner__label">
+              <span class="banner__label__inner"> Супер-Акция </span>
+            </p>
+
+            <h2 class="banner__title">Баннер акционный</h2>
+
+            <p class="banner__subtitle">Подробнее написано про акцию</p>
+          </div>
+
+          <div class="banner__img">
+            <img src="../assets/img/banner-inner.jpg" alt="banner" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="_container">
+        <div class="catalog__wrapper">
+          <h2 class="catalog__title">Пицца</h2>
+
+          <ul class="catalog-list">
+            <li class="catalog-list__item">
+              <a href="" class="catalog-list__image">
+                <span class="catalog-list__image__container">
+                  <img
+                    src="../assets/img/catalog/catalog-1.jpg"
+                    alt="product-1"
+                  />
+                </span>
+                <span class="catalog-list-label yellow">АКЦИЯ</span>
+              </a>
+
+              <div class="catalog-list__content">
+                <div class="catalog-list__info">
+                  <h3 class="catalog-list__title">Маргарита</h3>
+
+                  <div class="catalog-list__description">
+                    <p>Соус томатный, сыр моцарелла и спелые томаты.</p>
+                  </div>
+                </div>
+
+                <div class="catalog-list__actions">
+                  <div class="catalog-list-price">
+                    <p class="catalog-list-price__sale"><span>145</span>₴</p>
+
+                    <p class="catalog-list-price__old"><span>178</span>₴</p>
+                  </div>
+
+                  <a href="#" class="button-light catalog-list__button">
+                    <span>Заказать</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-list__item">
+              <a href="" class="catalog-list__image">
+                <span class="catalog-list__image__container">
+                  <img
+                    src="../assets/img/catalog/catalog-2.jpg"
+                    alt="product-1"
+                  />
+                </span>
+                <span class="catalog-list-label green">ХИТ</span>
+              </a>
+
+              <div class="catalog-list__content">
+                <div class="catalog-list__info">
+                  <h3 class="catalog-list__title">Барбекю</h3>
+
+                  <div class="catalog-list__description">
+                    <p>
+                      Соус барбекю, сыр моцарелла, грибы шампиньоны, лук,
+                      хрустящий бекон, свинина и свежая петрушкаСоус барбекю,
+                      сыр моцарелла, грибы шампиньоны, лук, хрустящий бекон,
+                      свинина и свежая петрушка
+                    </p>
+                  </div>
+                </div>
+
+                <div class="catalog-list__actions">
+                  <div class="catalog-list-price">
+                    <p class="catalog-list-price__old"><span>165</span>₴</p>
+                  </div>
+
+                  <a href="#" class="button-light catalog-list__button">
+                    <span>Заказать</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-list__item">
+              <a href="" class="catalog-list__image">
+                <span class="catalog-list__image__container">
+                  <img
+                    src="../assets/img/catalog/catalog-3.jpg"
+                    alt="product-1"
+                  />
+                </span>
+                <span class="catalog-list-label red">Острая</span>
+              </a>
+
+              <div class="catalog-list__content">
+                <div class="catalog-list__info">
+                  <h3 class="catalog-list__title">Пепперони</h3>
+
+                  <div class="catalog-list__description">
+                    <p>
+                      Соус томатный, сыр моцарелла в сочетании с колбаской
+                      пепперони.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="catalog-list__actions">
+                  <div class="catalog-list-price">
+                    <p class="catalog-list-price__old"><span>155</span>₴</p>
+                  </div>
+
+                  <a href="#" class="button-light catalog-list__button">
+                    <span>Заказать</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="catalog-list__item">
+              <a href="" class="catalog-list__image">
+                <span class="catalog-list__image__container">
+                  <img
+                    src="../assets/img/catalog/catalog-1.jpg"
+                    alt="product-1"
+                  />
+                </span>
+                <span class="catalog-list-label yellow">АКЦИЯ</span>
+              </a>
+
+              <div class="catalog-list__content">
+                <div class="catalog-list__info">
+                  <h3 class="catalog-list__title">Маргарита</h3>
+
+                  <div class="catalog-list__description">
+                    <p>Соус томатный, сыр моцарелла и спелые томаты.</p>
+                  </div>
+                </div>
+
+                <div class="catalog-list__actions">
+                  <div class="catalog-list-price">
+                    <p class="catalog-list-price__sale"><span>145</span>₴</p>
+
+                    <p class="catalog-list-price__old"><span>178</span>₴</p>
+                  </div>
+
+                  <a href="#" class="button-light catalog-list__button">
+                    <span>Заказать</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-list__item">
+              <a href="" class="catalog-list__image">
+                <span class="catalog-list__image__container">
+                  <img
+                    src="../assets/img/catalog/catalog-2.jpg"
+                    alt="product-1"
+                  />
+                </span>
+                <span class="catalog-list-label green">ХИТ</span>
+              </a>
+
+              <div class="catalog-list__content">
+                <div class="catalog-list__info">
+                  <h3 class="catalog-list__title">Барбекю</h3>
+
+                  <div class="catalog-list__description">
+                    <p>
+                      Соус барбекю, сыр моцарелла, грибы шампиньоны, лук,
+                      хрустящий бекон, свинина и свежая петрушка
+                    </p>
+                  </div>
+                </div>
+
+                <div class="catalog-list__actions">
+                  <div class="catalog-list-price">
+                    <p class="catalog-list-price__old"><span>165</span>₴</p>
+                  </div>
+
+                  <a href="#" class="button-light catalog-list__button">
+                    <span>Заказать</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-list__item">
+              <a href="" class="catalog-list__image">
+                <span class="catalog-list__image__container">
+                  <img
+                    src="../assets/img/catalog/catalog-3.jpg"
+                    alt="product-1"
+                  />
+                </span>
+                <span class="catalog-list-label red">Острая</span>
+              </a>
+
+              <div class="catalog-list__content">
+                <div class="catalog-list__info">
+                  <h3 class="catalog-list__title">Пепперони</h3>
+
+                  <div class="catalog-list__description">
+                    <p>
+                      Соус томатный, сыр моцарелла в сочетании с колбаской
+                      пепперони.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="catalog-list__actions">
+                  <div class="catalog-list-price">
+                    <p class="catalog-list-price__old"><span>155</span>₴</p>
+                  </div>
+
+                  <a href="#" class="button-light catalog-list__button">
+                    <span>Заказать</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="catalog-list__item">
+              <a href="" class="catalog-list__image">
+                <span class="catalog-list__image__container">
+                  <img
+                    src="../assets/img/catalog/catalog-1.jpg"
+                    alt="product-1"
+                  />
+                </span>
+                <span class="catalog-list-label yellow">АКЦИЯ</span>
+              </a>
+
+              <div class="catalog-list__content">
+                <div class="catalog-list__info">
+                  <h3 class="catalog-list__title">Маргарита</h3>
+
+                  <div class="catalog-list__description">
+                    <p>Соус томатный, сыр моцарелла и спелые томаты.</p>
+                  </div>
+                </div>
+
+                <div class="catalog-list__actions">
+                  <div class="catalog-list-price">
+                    <p class="catalog-list-price__sale"><span>145</span>₴</p>
+
+                    <p class="catalog-list-price__old"><span>178</span>₴</p>
+                  </div>
+
+                  <a href="#" class="button-light catalog-list__button">
+                    <span>Заказать</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-list__item">
+              <a href="" class="catalog-list__image">
+                <span class="catalog-list__image__container">
+                  <img
+                    src="../assets/img/catalog/catalog-2.jpg"
+                    alt="product-1"
+                  />
+                </span>
+                <span class="catalog-list-label green">ХИТ</span>
+              </a>
+
+              <div class="catalog-list__content">
+                <div class="catalog-list__info">
+                  <h3 class="catalog-list__title">Барбекю</h3>
+
+                  <div class="catalog-list__description">
+                    <p>
+                      Соус барбекю, сыр моцарелла, грибы шампиньоны, лук,
+                      хрустящий бекон, свинина и свежая петрушка
+                    </p>
+                  </div>
+                </div>
+
+                <div class="catalog-list__actions">
+                  <div class="catalog-list-price">
+                    <p class="catalog-list-price__old"><span>165</span>₴</p>
+                  </div>
+
+                  <a href="#" class="button-light catalog-list__button">
+                    <span>Заказать</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-list__item">
+              <a href="" class="catalog-list__image">
+                <span class="catalog-list__image__container">
+                  <img
+                    src="../assets/img/catalog/catalog-3.jpg"
+                    alt="product-1"
+                  />
+                </span>
+                <span class="catalog-list-label red">Острая</span>
+              </a>
+
+              <div class="catalog-list__content">
+                <div class="catalog-list__info">
+                  <h3 class="catalog-list__title">Пепперони</h3>
+
+                  <div class="catalog-list__description">
+                    <p>
+                      Соус томатный, сыр моцарелла в сочетании с колбаской
+                      пепперони.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="catalog-list__actions">
+                  <div class="catalog-list-price">
+                    <p class="catalog-list-price__old"><span>155</span>₴</p>
+                  </div>
+
+                  <a href="#" class="button-light catalog-list__button">
+                    <span>Заказать</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="_container contacts__container">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Наши контакты</h2>
+
+          <div class="contacts__list">
+            <div class="contacts-item">
+              <div class="contacts-item__label">
+                <img src="../assets/img/contacts-0.svg" alt="contacts-0" />
+              </div>
+
+              <div class="contacts-item__info">
+                <p class="contacts-item__title">Телефон:</p>
+
+                <div class="contacts-item__values">
+                  <a href="tel:0961708080">096 170-80-80</a>
+                  <a href="tel:0661708080">066 170-80-80</a>
+                  <a href="tel:0631708080">063 170-80-80</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contacts-item">
+              <div class="contacts-item__label">
+                <img src="../assets/img/contacts-1.svg" alt="contacts-1" />
+              </div>
+
+              <div class="contacts-item__info">
+                <p class="contacts-item__title">Адрес:</p>
+
+                <div class="contacts-item__values">
+                  <a
+                    target="_blank"
+                    href="https://www.google.com/maps/place/вулиця+Шевченка,+33,+Ірпінь,+Київська+обл.,+08200/@50.5188983,30.2400924,20z/data=!4m5!3m4!1s0x472b33d3c355d2f7:0x3515e03ce3968bdd!8m2!3d50.5187674!4d30.2399315?authuser=0"
+                    >г. Ирпень, ул. Шевченка, 33</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts-map">
+        <div class="contacts-map__hover">
+          <div class="contacts-map__label">
+            <p>Archi Pizza</p>
+          </div>
+        </div>
+
+        <div class="contacts-map__iframe">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1268.4056611240417!2d30.239317913138564!3d50.51907736878893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b31c174258a3d%3A0x777f5102ca22cae!2z0YPQuy4g0KjQtdCy0YfQtdC90LrQviwgMzMsINCR0YPRh9CwLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwODI5Mg!5e0!3m2!1sru!2sua!4v1684425260569!5m2!1sru!2sua"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="_container">
+        <div class="about__wrapper">
+          <div class="about__content">
+            <h2 class="about__title">
+              Пиццу смело можно назвать одним из любимейших блюд во всем мире
+            </h2>
+
+            <div class="about__description">
+              <p>
+                Ведь кто же сможет отказаться от этой хрустящей корочки,
+                плавленого сыра и чрезвычайного аромата. Это блюдо, которое
+                любят все и взрослые, и дети. Поэтому, если Вы хотите
+                насладиться вкусной пиццей на дровах заказывайте доставку пиццы
+                в Ирпене "Archi Pizza".
+              </p>
+
+              <p>
+                Наша пицца на дровах это частичка Италии у Вас дома, это особый
+                и неповторимый вкус традиционной пиццы, который не оставит вас
+                равнодушными. Ароматная пицца на тонкой корочке приготовленная
+                по лучшим классическим рецептам профессиональными пицейола — вот
+                что отличает нас среди других сервисов доставки пиццы. Мы взяли
+                лучшее из глубины веков и создали идеальную пиццу, доступную для
+                Всех!
+              </p>
+            </div>
+          </div>
+
+          <div class="about__img">
+            <img src="../assets/img/about-img.svg" alt="about" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="_container footer__container">
+        <div class="footer__wrapper">
+          <div class="footer__main">
+            <div class="footer-bg" aria-hidden="true">
+              <div class="footer-bg__item">
+                <img src="../assets/img/shapes/bg-footer-1.svg" alt="bg-item" />
+              </div>
+
+              <div class="footer-bg__item">
+                <img src="../assets/img/shapes/bg-footer-2.svg" alt="bg-item" />
+              </div>
+            </div>
+
+            <div class="footer__info">
+              <a href="#" class="footer__logo logo-link">
+                <img src="../assets/img/logo-footer.svg" alt="logo" />
+              </a>
+
+              <ul class="socials">
+                <li>
+                  <a href="#" class="socials__item">
+                    <img
+                      src="../assets/img/socials-insatgram.svg"
+                      alt="instagram"
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="socials__item">
+                    <img
+                      src="../assets/img/socials-facebook.svg"
+                      alt="facebook"
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="socials__item">
+                    <img
+                      src="../assets/img/socials-youtube.svg"
+                      alt="youtube"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <nav class="footer-navigation">
+              <ul class="footer-accordion">
+                <li class="footer-accordion__item" data-index="0">
+                  <div class="footer-accordion__item__container">
+                    <div class="footer-accordion__header">
+                      <a href="#" class="footer-accordion__title">
+                        Наше меню
+                      </a>
+
+                      <button class="footer-accordion__summary">
+                        <img
+                          src="../assets/img/arrow-faq-white.svg"
+                          alt="details"
+                        />
+                      </button>
+                    </div>
+
+                    <div class="footer-accordion__details">
+                      <ul class="footer-navigation-sublist">
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Пицца
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-navigation__link"> Суши </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Соусы
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Напитки
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Десерты
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="footer-accordion__item" data-index="1">
+                  <div class="footer-accordion__item__container">
+                    <div class="footer-accordion__header">
+                      <a href="#" class="footer-accordion__title"> Разделы </a>
+
+                      <button class="footer-accordion__summary">
+                        <img
+                          src="../assets/img/arrow-faq-white.svg"
+                          alt="details"
+                        />
+                      </button>
+                    </div>
+
+                    <div class="footer-accordion__details">
+                      <ul class="footer-navigation-sublist">
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Оплата и доставка
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Акции
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Отзывы
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Контакты
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Политика конфиденциальности
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="footer-accordion__item" data-index="2">
+                  <div class="footer-accordion__item__container">
+                    <div class="footer-accordion__header">
+                      <a href="#" class="footer-accordion__title"> Контакты </a>
+
+                      <button class="footer-accordion__summary">
+                        <img
+                          src="../assets/img/arrow-faq-white.svg"
+                          alt="details"
+                        />
+                      </button>
+                    </div>
+
+                    <div class="footer-accordion__details">
+                      <ul class="footer-navigation-sublist">
+                        <li>
+                          <a href="#" class="footer-navigation__link _location">
+                            г. Ирпень, ул. Шевченка, 33
+                          </a>
+                        </li>
+                        <li>
+                          <div class="call__list footer__call__list">
+                            <a href="tel:0961708080" class="call__item"
+                              >096 170-80-80</a
+                            >
+                            <a href="tel:0661708080" class="call__item"
+                              >066 170-80-80</a
+                            >
+                            <a href="tel:0631708080" class="call__item"
+                              >063 170-80-80</a
+                            >
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer__bottom">
+            <p class="footer__copyright">
+              © Copyright 2021 Archi Pizza. Все права защищены.
+            </p>
+            <div class="footer__develop">
+              <p>
+                Разработка сайта —
+                <a href="#">Link</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

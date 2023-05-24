@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header _inner">
+      <div class="_container">
+        <div class="header__wrapper">
+          <div class="header__mark"></div>
+
+          <div class="header__item _logo">
+            <a href="#" class="header__logo logo-link">
+              <img loading="lazy" src="../assets/img/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <div class="header__navigation">
+            <nav class="menu _desk">
+              <ul class="menu__list">
+                <li>
+                  <a href="#" class="menu__item active">Меню</a>
+                </li>
+                <li>
+                  <a href="#" class="menu__item">Оплата и доставка</a>
+                </li>
+                <li>
+                  <a href="#" class="menu__item">Акции</a>
+                </li>
+                <li>
+                  <a href="#" class="menu__item">Отзывы</a>
+                </li>
+                <li>
+                  <a href="#" class="menu__item">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div
+              class="schedule _desk"
+              property="schema:openingHoursSpecification"
+              typeof="schema:OpeningHoursSpecification"
+            >
+              <div class="schedule__label">
+                <img src="../assets/img/time.svg" alt="shedule time" />
+              </div>
+              <div class="schedule__content">
+                <p class="schedule__title">Работаем:</p>
+                <time datetime="11h" class="schedule__description">
+                  с <time property="schema:opens">09:30</time> до
+                  <time property="schema:closes">20:30</time>
+                </time>
+              </div>
+            </div>
+
+            <div class="call _desk">
+              <button class="call__btn popup-open" data-popup="_popup-call">
+                <img src="../assets/img/call.svg" alt="call" />
+              </button>
+
+              <div class="call__list _desk">
+                <a href="tel:0961708080" class="call__item">096 170-80-80</a>
+                <a href="tel:0661708080" class="call__item">066 170-80-80</a>
+                <a href="tel:0631708080" class="call__item">063 170-80-80</a>
+              </div>
+            </div>
+
+            <div class="header__buttons">
+              <a href="#" class="cart">
+                <span class="cart__name">
+                  <span class="cart__title"> Корзина </span>
+
+                  <span class="cart__label">
+                    <img
+                      class="hover"
+                      src="../assets/img/cart-hover.svg"
+                      alt="cart"
+                      aria-hidden="true"
+                    />
+                    <img
+                      class="static"
+                      src="../assets/img/cart.svg"
+                      alt="cart"
+                      aria-hidden="true"
+                    />
+                  </span>
+                </span>
+
+                <span class="cart__count">2</span>
+              </a>
+
+              <ul class="menu__lang">
+                <li>
+                  <span class="lang-item lang-item-current">
+                    ru
+                    <img
+                      src="../assets/img/arrow-down.svg"
+                      alt="language toggle"
+                    />
+                  </span>
+
+                  <ul>
+                    <li
+                      class="lang-item lang-item-1 lang-item-en lang-item-first"
+                    >
+                      <a lang="rus-RU" hreflang="rus-RU" href="#1"> ua </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <button class="menu-burger popup-open" data-popup="_popup-menu">
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="popup popup-call"
+        data-popupname="_popup-call"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close">
+              <img
+                class="desktop"
+                src="../assets/img/popup-close.svg"
+                alt="close"
+              />
+              <img
+                class="mobile"
+                src="../assets/img/popup-close-black.svg"
+                alt="close"
+              />
+            </button>
+
+            <div class="popup__content">
+              <div class="popup__title__container">
+                <p class="popup__title">Contact us</p>
+              </div>
+
+              <div class="call__list">
+                <a href="tel:0961708080" class="call__item">096 170-80-80</a>
+                <a href="tel:0661708080" class="call__item">066 170-80-80</a>
+                <a href="tel:0631708080" class="call__item">063 170-80-80</a>
+              </div>
+              <!-- <div class="popup__subtitle">
+                      <p>
+                          By clicking the "send" button, you agree to the
+                          and consent to the processing of personal data
+                      </p>
+                  </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="popup popup-menu fullscreen-phone"
+        data-popupname="_popup-menu"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close">
+              <img src="../assets/img/popup-close-black.svg" alt="close" />
+            </button>
+
+            <div class="popup__content">
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li>
+                    <a href="#" class="menu__item active">Меню</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item">Оплата и доставка</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item">Акции</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item">Отзывы</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <div
+                class="schedule"
+                property="schema:openingHoursSpecification"
+                typeof="schema:OpeningHoursSpecification"
+              >
+                <div class="schedule__label">
+                  <img src="../assets/img/time.svg" alt="shedule time" />
+                </div>
+                <div class="schedule__content">
+                  <p class="schedule__title">Работаем:</p>
+                  <time datetime="11h" class="schedule__description">
+                    с <time property="schema:opens">09:30</time> до
+                    <time property="schema:closes">20:30</time>
+                  </time>
+                </div>
+              </div>
+
+              <div class="call__list">
+                <a href="tel:0961708080" class="call__item">096 170-80-80</a>
+                <a href="tel:0661708080" class="call__item">066 170-80-80</a>
+                <a href="tel:0631708080" class="call__item">063 170-80-80</a>
+              </div>
+              <!-- <div class="popup__subtitle">
+                      <p>
+                          By clicking the "send" button, you agree to the
+                          and consent to the processing of personal data
+                      </p>
+                  </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="popup popup-video" data-popupname="_popup-video" aria-modal="true" role="dialog">
+      <div class="popup__scroll">
+          <div class="popup__wrapper">
+              <button class="popup__close">
+                  <img class="desktop" src="../assets/img/popup-close.svg" alt="close">
+                  <img class="mobile" src="../assets/img/popup-close-black.svg" alt="close">
+              </button>
+
+              <div class="popup__content">
+
+                  <div class="popup__video">
+                      <div class="popup__video__container">
+                          <iframe src="https://www.youtube.com/embed/oZOLnp5yQ4Y" title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen>
+                          </iframe>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div> -->
+    </header>
+
+    <div class="breadcrumbs__container _container">
+      <div class="breadcrumbs">
+        <span>
+          <span>
+            <a href="#">Оплата и доставка</a>
+            »
+            <span class="breadcrumb_last" aria-current="page"
+              >Пицца: детальный путеводитель</span
+            >
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <section class="article _inner-section">
+      <div class="_container">
+        <div class="article-banner">
+          <div class="article-banner__container">
+            <img
+              src="../assets/img/article/article-banner.jpg"
+              alt="article-banner"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="article__container">
+        <h1 class="article__title">
+          Пицца: детальный путеводитель. Какая она бывает, из чего замешивают
+          тесто и другие подробности
+        </h1>
+
+        <time datetime="2021-11-19" class="article__date">
+          Дата:
+          <span>19.11.2021</span>
+        </time>
+
+        <p class="article__description">
+          В общем, любой каприз — на кусочке лепешки. Мы поговорили с тремя
+          людьми, разбирающимися в пицце, и составили подробный гид по пицце как
+          блюду.
+        </p>
+
+        <div class="article-typography typography">
+          <div>
+            <p>
+              <strong>Пицца</strong>, <i>как ни крути</i>,
+              <ins>блюдо идеальное</ins>. <a href="#">Простое</a> (тесто и
+              начинка, что может быть лаконичнее), красочное, аппетитное,
+              сытное, способное объединить практически любые продукты на одной
+              тарелке. В общем, любой каприз — на кусочке лепешки. Мы поговорили
+              с тремя людьми, разбирающимися в пицце, и составили подробный гид
+              по пицце как блюду.
+            </p>
+          </div>
+
+          <div>
+            <h2>Какой бывает пицца?</h2>
+
+            <p>
+              В Италии существует четыре основных вида пиццы, все остальное —
+              вариации на тему.
+            </p>
+
+            <ul>
+              <li>классическая пицца на тонком тесте;</li>
+              <li>
+                неаполитанская (меньшая по диаметру и обычно с более высокими
+                бортами);
+              </li>
+              <li>
+                пан-пицца (это пицца на противне, приготовленная по хлебной
+                технологии, ее отличает высокое тесто и мелкопористый мякиш);
+              </li>
+              <li>
+                римская пицца скрокьярелла (она тоже довольно высокая, у нее
+                крупнопористый мякиш, очень легкое тесто, хрустящее снаружи и
+                воздушное внутри).
+              </li>
+            </ul>
+
+            <ol>
+              <li>классическая пицца на тонком тесте;</li>
+              <li>
+                неаполитанская (меньшая по диаметру и обычно с более высокими
+                бортами);
+              </li>
+              <li>
+                пан-пицца (это пицца на противне, приготовленная по хлебной
+                технологии, ее отличает высокое тесто и мелкопористый мякиш);
+              </li>
+              <li>
+                римская пицца скрокьярелла (она тоже довольно высокая, у нее
+                крупнопористый мякиш, очень легкое тесто, хрустящее снаружи и
+                воздушное внутри).
+              </li>
+            </ol>
+
+            <p>
+              Все они отличаются по тестоведению (процессу созревания теста),
+              температуре выпекания, по ингредиентам для теста, времени и
+              температуре выпекания, настройкам печи.
+            </p>
+
+            <blockquote>
+              Тесто замешивается в тестомесе примерно 15 минут. Глютеновый
+              каркас теста формируется в первые четыре минуты, поэтому очень
+              важно, чтобы в этот момент в емкости были только вода, мука и
+              дрожжи.
+            </blockquote>
+
+            <p>
+              Есть пицца, похожая на классическую, но произвольной формы, она
+              распространилась из Рима: борта у нее почти нет, а тесто более
+              хрустящее, чем у неаполитанской, но менее хрустящее, чем у
+              классической. Ее называют римской пиццей.
+            </p>
+
+            <figure>
+              <img src="../assets/img/article/article-0.jpg" alt="article-0" />
+              <img src="../assets/img/article/article-1.jpg" alt="article-1" />
+            </figure>
+
+            <figure>
+              <img src="../assets/img/article/article-0.jpg" alt="article-0" />
+              <img src="../assets/img/article/article-0.jpg" alt="article-0" />
+              <img src="../assets/img/article/article-1.jpg" alt="article-1" />
+            </figure>
+
+            <figure>
+              <img src="../assets/img/article/article-0.jpg" alt="article-0" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="_container footer__container">
+        <div class="footer__wrapper">
+          <div class="footer__main">
+            <div class="footer-bg" aria-hidden="true">
+              <div class="footer-bg__item">
+                <img src="../assets/img/shapes/bg-footer-1.svg" alt="bg-item" />
+              </div>
+
+              <div class="footer-bg__item">
+                <img src="../assets/img/shapes/bg-footer-2.svg" alt="bg-item" />
+              </div>
+            </div>
+
+            <div class="footer__info">
+              <a href="#" class="footer__logo logo-link">
+                <img src="../assets/img/logo-footer.svg" alt="logo" />
+              </a>
+
+              <ul class="socials">
+                <li>
+                  <a href="#" class="socials__item">
+                    <img
+                      src="../assets/img/socials-insatgram.svg"
+                      alt="instagram"
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="socials__item">
+                    <img
+                      src="../assets/img/socials-facebook.svg"
+                      alt="facebook"
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="socials__item">
+                    <img
+                      src="../assets/img/socials-youtube.svg"
+                      alt="youtube"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <nav class="footer-navigation">
+              <ul class="footer-accordion">
+                <li class="footer-accordion__item" data-index="0">
+                  <div class="footer-accordion__item__container">
+                    <div class="footer-accordion__header">
+                      <a href="#" class="footer-accordion__title">
+                        Наше меню
+                      </a>
+
+                      <button class="footer-accordion__summary">
+                        <img
+                          src="../assets/img/arrow-faq-white.svg"
+                          alt="details"
+                        />
+                      </button>
+                    </div>
+
+                    <div class="footer-accordion__details">
+                      <ul class="footer-navigation-sublist">
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Пицца
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-navigation__link"> Суши </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Соусы
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Напитки
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Десерты
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="footer-accordion__item" data-index="1">
+                  <div class="footer-accordion__item__container">
+                    <div class="footer-accordion__header">
+                      <a href="#" class="footer-accordion__title"> Разделы </a>
+
+                      <button class="footer-accordion__summary">
+                        <img
+                          src="../assets/img/arrow-faq-white.svg"
+                          alt="details"
+                        />
+                      </button>
+                    </div>
+
+                    <div class="footer-accordion__details">
+                      <ul class="footer-navigation-sublist">
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Оплата и доставка
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Акции
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Отзывы
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Контакты
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-navigation__link">
+                            Политика конфиденциальности
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="footer-accordion__item" data-index="2">
+                  <div class="footer-accordion__item__container">
+                    <div class="footer-accordion__header">
+                      <a href="#" class="footer-accordion__title"> Контакты </a>
+
+                      <button class="footer-accordion__summary">
+                        <img
+                          src="../assets/img/arrow-faq-white.svg"
+                          alt="details"
+                        />
+                      </button>
+                    </div>
+
+                    <div class="footer-accordion__details">
+                      <ul class="footer-navigation-sublist">
+                        <li>
+                          <a href="#" class="footer-navigation__link _location">
+                            г. Ирпень, ул. Шевченка, 33
+                          </a>
+                        </li>
+                        <li>
+                          <div class="call__list footer__call__list">
+                            <a href="tel:0961708080" class="call__item"
+                              >096 170-80-80</a
+                            >
+                            <a href="tel:0661708080" class="call__item"
+                              >066 170-80-80</a
+                            >
+                            <a href="tel:0631708080" class="call__item"
+                              >063 170-80-80</a
+                            >
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer__bottom">
+            <p class="footer__copyright">
+              © Copyright 2021 Archi Pizza. Все права защищены.
+            </p>
+            <div class="footer__develop">
+              <p>
+                Разработка сайта —
+                <a href="#">Link</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

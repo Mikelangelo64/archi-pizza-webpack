@@ -1,0 +1,236 @@
+@import '../base';
+
+.contacts {
+  position: relative;
+  z-index: 0;
+  background-color: var(--color-grey-500);
+
+  @include viewport-tablet-min {
+    padding: px-to-rem(80) 0;
+  }
+  @include viewport-phone {
+    padding: px-to-rem(60) 0 0;
+  }
+
+  //.contacts__container 
+  &__container {
+    position: relative;
+    z-index: 0;
+  }
+
+  //.contacts__wrapper 
+  &__wrapper {
+    max-width: 36.429%;
+
+    @include viewport-phone {
+      @media (max-width: 550px) {
+        max-width: unset;
+      }
+    }
+
+    > * + * {
+      @include viewport-tablet-min {
+        margin-top: px-to-rem(42);
+      }
+      @include viewport-phone {
+        margin-top: px-to-rem(30);
+      }
+    }
+  }
+  
+  //.contacts__title 
+  &__title {
+    @include text-heading-2;
+  }
+  
+  //.contacts__list 
+  &__list {
+    > * + * {
+      @include viewport-tablet-min {
+        margin-top: px-to-rem(34);
+      }
+      @include viewport-phone {
+        margin-top: px-to-rem(28);
+      }
+    }
+  }
+  
+  //.contacts-item 
+  &-item {
+    display: flex;
+
+    > * + * {
+      margin-left: px-to-rem(10);
+    }
+
+    //.contacts-item__label 
+    &__label {
+      flex-shrink: 0;
+      @include viewport-tablet-min {
+        width: px-to-rem(24);
+      }
+      
+      @include viewport-phone {
+        width: px-to-rem(20);
+      }
+
+      img,
+      svg {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    //.contacts-item__info 
+    &__info {
+      @include viewport-tablet-min {
+        font-size: px-to-rem(18);
+      }
+
+      @include viewport-phone {
+        font-size: px-to-rem(16);
+      }
+
+      > * + * {
+        margin-top: px-to-rem(10);
+      }
+    }
+
+    //.contacts-item__title 
+    &__title {
+      font-weight: 300;
+      line-height: 160%;
+      color: var(--color-grey);
+    }
+
+    //.contacts-item__values 
+    &__values {
+      display: flex;
+      flex-direction: column;
+
+      font-weight: 500;
+      line-height: 110%;
+      color: var(--color-black-100);
+
+      > * + * {
+        margin-top: px-to-rem(8);
+      }
+
+      a {
+        @include transition(color 0.4s);
+        text-decoration: unset;
+        color: inherit;
+
+        @include hover-focus-visible {
+          @include non-mobile-device {
+            color: var(--color-red-100);
+          }
+        }
+      }
+    }
+  }
+  
+  //.contacts-map 
+  &-map {
+    @include viewport-tablet-min {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 45.313%;
+      z-index: 1;
+      width: 54.687%;
+    }
+
+    @include viewport-phone {
+      margin-top: px-to-rem(40);
+    }
+    
+    //.contacts-map__label 
+    &__label {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: inline-block;
+      z-index: 1;
+      border-radius: px-to-rem(12);
+      border-bottom-left-radius: 0;
+
+      transform: translate(0, -120%);
+      transition: opacity 0.3s linear 0.1s, visibility 0.1s linear;
+
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 110%;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+
+      color: var(--color-white);
+      background-color: var(--color-red-100);
+
+      @include viewport-tablet-min {
+        padding: px-to-rem(24) px-to-rem(30);
+        font-size: px-to-rem(24);
+      }
+
+      @include viewport-phone {
+        display: none;
+        padding: px-to-rem(20) px-to-rem(26);
+        font-size: px-to-rem(20);
+      }
+
+      @include mobile-device {
+        display: none;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 96%;
+        left: 0;
+        width: px-to-rem(24);
+        height: px-to-rem(20);
+
+        background-image: url('../assets/img/triangle-comment.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 0;
+      }
+
+      @at-root .contacts-map:hover & {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s linear, visibility 0.1s linear 0.3s;
+
+      }
+    }
+    
+    //.contacts-map__iframe 
+    &__iframe {
+      z-index: 0;
+      
+      @include viewport-tablet-min {
+        @include absolute-fullsize;
+      }
+
+      @include viewport-phone {
+        position: relative;
+        padding-top: px-to-rem(300);
+      }
+
+      @include transition(filter 0.5s);
+      filter: grayscale(100%);
+
+      @include hover-focus-visible {
+        @include non-mobile-device {
+          filter: unset;
+        }
+      }
+
+      iframe {
+        @include absolute-fullsize;
+        border: unset;
+      }
+    }
+  }
+}

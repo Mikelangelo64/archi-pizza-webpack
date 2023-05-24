@@ -1,0 +1,39 @@
+@import './base';
+
+:root {
+  // @include viewport-tablet {
+  //   --wrap: calc(5 * var(--vw, 1vw));
+  // }
+  // @include viewport-phone {
+  //   --wrap: calc(5 * var(--vw, 1vw));
+  // }
+  
+  // @include viewport-desktop {
+  //   --wrap: calc(5.75 * var(--vw, 1vw));
+
+  //   @media (min-width: 1300px) {
+  //     --wrap: calc((var(--vw, 1vw) * 100 - 1200px) / 2);
+  //   }
+  // }
+  @include viewport-tablet {
+    --wrap: 5vw;
+    --wrap-1: 5vw;
+    --wrap-banner: var(--wrap-1);
+  }
+  @include viewport-phone {
+    --wrap: 5vw;
+    --wrap-1: 5vw;
+    --wrap-banner: var(--wrap-1);
+  }
+  
+  --wrap: 5.75vw;
+  --wrap-1: 10vw;
+  --wrap-banner: 5.3125vw;
+  @include viewport-desktop {
+    @media (min-width: 1300px) {
+      --wrap: calc((100vw - 1202px) / 2);
+      --wrap-1: calc((100vw - 792px) / 2);
+      --wrap-banner: #{px-to-rem(102)};
+    }
+  }
+}

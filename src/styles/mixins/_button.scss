@@ -1,0 +1,61 @@
+@import './reset';
+
+@mixin button {
+  @include reset-button;
+  position: relative;
+  z-index: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: px-to-rem(30);
+  padding: px-to-rem(18) px-to-rem(30);
+  overflow: hidden;
+  
+  @include transition(color 0.5s);
+  transform: translateZ(0);
+  font-weight: 500;
+  font-size: px-to-rem(18);
+  line-height: 110%;
+  text-decoration: unset;
+  color: var(--color-white);
+  background-color: var(--color-red-100);
+
+  @include hover-focus-visible {
+    @include non-mobile-device {
+      color: var(--color-white);
+
+      &::before {
+        transform: translate(0);
+      }
+    }
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: inherit;
+
+    @include transition(transform 0.5s);
+    transform: translate(-110%, 0);
+    background-color: var(--color-red-200);
+  }
+
+  span {
+    position: relative;
+    pointer-events: none
+  }
+}
+
+@mixin button-light {
+  @include button;
+  padding: px-to-rem(16) px-to-rem(26);
+  color: var(--color-red-100);
+  background-color: var(--color-grey-450);
+}
