@@ -118,6 +118,16 @@ module.exports = {
         loader: 'html-loader',
         options: {
           minimize: false,
+          sources: {
+            list: [
+              '...',
+              {
+                tag: 'a',
+                attribute: 'href',
+                type: 'src',
+              },
+            ],
+          },
         },
       },
     ],
